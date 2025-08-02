@@ -1,5 +1,6 @@
+/* jshint esversion: 8 */
+/* global CONFIG, loadConfig, fetchGPT, speak */
 
-// invoke.js
 async function handleInput() {
   if (!CONFIG.OPENAI_KEY) await loadConfig();
 
@@ -15,4 +16,3 @@ async function handleInput() {
 
   document.getElementById("userInput").value = "";
 }
-
